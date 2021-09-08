@@ -14,7 +14,6 @@ const navSlide = () => {
 navSlide();
 
 // Testimonial Slider
-
 var indexValue = 1;
 showTestimonial(indexValue);
 

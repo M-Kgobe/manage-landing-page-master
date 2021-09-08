@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
 }
+
 /* Scrolling Behaviour */
 html{
     scroll-behavior: smooth;
@@ -21,13 +22,12 @@ html{
     top: 0;
     padding: 1em 4em;
     background-color: hsl(13, 100%, 96%);
-    transition: all 0.5 linear;
+    transition: all 0.25s linear;
     z-index: 1;
 }
-.scroll-active #nav-bar a{
-    color: inherit;
-}
 /* End of scrolling behaviour */
+
+/* 🤷🏽‍♂️I definetly dont know what to name this sections styling */
 body{
     font-family: 'Be Vietnam', sans-serif;
     width: 100%;
@@ -52,7 +52,7 @@ button, input{
     padding: 0.8em 1em;
     font-weight: 500;
 }
-
+/* 🤔maybe something like tag formatting might actually do */
 
 /* HEADER LANDMARK */
 #header{
@@ -196,6 +196,7 @@ button, input{
                 width: 100%;
             }
 /* END OF HEADER */
+
 /* MAIN LANDMARK */
 #container{
     display: flex;
@@ -389,6 +390,7 @@ button, input{
                 box-shadow: 0 0 5px hsl(13, 100%, 96%);
             }
 /* END OF MAIN */
+
 /* FOOTER LANDMARK */
 #ending{
     display: flex;
