@@ -1,0 +1,246 @@
+
+@media screen and (max-width:970px) {
+    #progressbar{
+        display: none;
+    }
+    body{
+        width: 100%;
+        background-position: -100% 20%;
+    }
+    /* Header     */
+    #header{
+        width: 100%;
+        background-position: -80% -70%;
+        position: relative;
+    }
+    #nav-bar{
+        padding: 4em 2em 2em 2em;
+        position: inherit;
+    }
+        .nav-links{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 20vh;
+            left: 0;
+            right: 0;
+            width: 80%;
+            max-width: 500px;
+            height: 70vh;
+            border-radius: 1em;
+            box-shadow: 0 0 10px -3px;
+            margin: auto;
+            background-color: white;
+            transform: scale(0);
+            transform-origin: top right;
+            transition: all 0.5s ease-in;
+        }
+        .hamburger{
+            display: block;
+            cursor: pointer;
+        }
+        .nav-active{
+            transform: scale(1);
+        }
+        .nav-btn{
+            display: none;
+        }
+    #intro{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 2em;
+    }
+        .header-info{
+            align-items: center;
+            width: 100%;
+            text-align: center;
+        }
+        .intro-illustration{
+            width: 100%;
+        }
+    /* End of header */
+    /* Main section */
+    #about{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding:unset;
+        padding-left: 2em;
+    }
+        .manage{
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            padding-top: 4em;
+        }
+            .manage h2{
+                max-width: 70%;
+            }
+        .about-list{
+            align-items: center;
+            width: 100%;
+        }
+            .list-box{
+                padding: unset;
+            }
+                .list-box h3{
+                    display: flex;
+                    align-items: center;
+                    gap: 1em;
+                    background-color: hsl(13, 100%, 96%);
+                    width: 100%;
+                    border-radius: 1em 0 0 1em;
+                }
+                    .list-box span{
+                        display: inline-flex;
+                        position: relative;
+                        top: unset;
+                        left: 0;
+                    }
+                .list-box p{
+                    max-width: 80%;
+                    line-height: 2rem;
+                }
+        #testimonials-section{
+            width: 100%;
+        }
+            .slider-options{
+                position: absolute;
+                bottom: -2rem;
+                display: flex;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+                .slider-options span{
+                    height: 10px;
+                    width: 10px;
+                    margin: 0 5px;
+                    border: 1px solid hsl(12, 88%, 59%);
+                    border-radius: 50%;
+                    transition: 0.5s linear;
+                }
+            .testimonials{
+                justify-content: center;
+                position: relative;
+            }
+                .test-box{
+                    width: auto;
+                    min-width: 40%;
+                    max-width: 80%;
+                }
+        #teams{
+            flex-direction: column;
+            gap: 4em;
+            width: 100%;
+        }
+            #teams h2{
+                max-width: 80%;
+                text-align: center;
+            }
+            /* Emd of the main section */
+            /* Footer */
+            #ending{
+                flex-direction: column-reverse;
+                align-items: center;
+                justify-content: center;
+            }
+                .icons{
+                    flex-direction: column-reverse;
+                    align-items: center;
+                    gap: 3em;
+                    width: 100%;
+                    margin-bottom: 2em;
+                }
+                    .social-links{
+                        gap: 2em;
+                    }
+                        .social-links li a{
+                            font-size: 2rem;
+                        }
+                .updates{
+                    justify-content: center;
+                    width: 100%;
+                }
+                    .updates-inp{
+                        width: 100%;
+                    }
+                    .updates small{
+                        position: absolute;
+                        bottom: -2em;
+                        right: 20%;
+                        color: hsl(12, 88%, 59%);
+                        visibility: hidden;
+                    }
+                    .updates-btn{
+                        width: 100px;
+                    }
+                .footer-links{
+                    width: 100%;
+                }
+                    .footer-links li{
+                        display: flex;
+                        justify-content: center;
+                    }
+                .attribution{
+                    bottom: 3em;
+                    right: unset;
+                    margin: auto;
+                }
+}
+@media screen  and (max-width:600px){
+    body{
+        background-position: -20% 15%;
+    }
+    #header{
+        background-position: -40% -100%;
+    }
+    .testimonials{
+        width: 80%;
+    }
+        .test-box{
+            width: 100%;
+            max-width: 100%;
+        }
+}
+@media screen and (max-width:400px) and (min-width:275px) {
+    body{
+        background-position: -25% 15%;
+    }
+    #header{
+        background-position: -20% -100%;
+    }
+    .updates{
+        flex-direction: column;
+        gap: 2em;
+    }
+        .updates-btn{
+            width: 100%;
+        }  
+        .updates small{
+            right: 0;
+            bottom: unset;
+        }
+    .footer-links{
+        display: flex;
+        flex-direction: column;
+    } 
+    .social-links{
+        flex-direction: column;
+    }
+    br{
+        display: inline-block;
+    }
+    .slider-options span{
+        width: 50px;
+        border-radius: unset;
+    }
+    #testimonials-section .slide{
+        display: none;
+    }
+    .scroll-active #nav-bar{
+        padding: 1em 2em;
+    }
+}
